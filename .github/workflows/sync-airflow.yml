@@ -16,4 +16,4 @@ jobs:
       - name: Copy dags folder to S3
         run: aws s3 sync ./dags s3://myairflowbucketdemo/dags --delete
       - name: Copy requirements to S3  
-        run: aws s3 sync ./requirements.txt ./dags s3://myairflowbucketdemo/
+        run: aws s3 sync ./requirements.txt s3://myairflowbucketdemo
